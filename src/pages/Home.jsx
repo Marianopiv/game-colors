@@ -36,7 +36,7 @@ const Clase0511 = () => {
           {toogleModal ? "Cerrar Modal" : "Agregar mas colores"}
         </Button>
         <img className="w-screen h-screen -z-20 absolute object-cover" src={cubesLg} alt="fondo de cubos" />
-        <h1 className="text-6xl bg-white p-3 rounded-sm mt-20 shadow-2xl w-5/6 text-center">
+        <h1 className="text-6xl bg-white dark:bg-white dark:text-black p-3 rounded-sm mt-20 shadow-2xl w-5/6 text-center">
           El Juego de los Cuadrados
         </h1>
         <div className={`${!startGame ? "flex flex-col py-2 bg-white justify-center  items-center w-5/6" : "hidden"}`}>
@@ -83,7 +83,7 @@ const Clase0511 = () => {
         </div>
         {startGame && selectedColors.length > 0 && (
           <>
-            <div className="shadow-2xl bg-white rounded-sm flex justify-center gap-4 p-4 mx-14 flex-wrap md:flex-nowrap md:w-2/4">
+            <div className="shadow-2xl bg-white dark:bg-white rounded-sm flex justify-center gap-4 p-4 mx-14 flex-wrap md:flex-nowrap md:w-2/4">
               {selectedColors?.map((color, index) => {
                 return (
                   <Cube
