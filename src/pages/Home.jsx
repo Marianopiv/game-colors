@@ -36,7 +36,7 @@ const Clase0511 = () => {
           {toogleModal ? "Cerrar Modal" : "Agregar mas colores"}
         </Button>
         <img className="w-screen h-screen -z-20 absolute object-cover" src={cubesLg} alt="fondo de cubos" />
-        <h1 className="text-6xl bg-white dark:bg-white dark:text-black p-3 rounded-sm mt-20 shadow-2xl w-5/6 text-center">
+        <h1 className="text-5xl md:text-6xl bg-white dark:bg-white dark:text-black p-3 rounded-sm mt-20 shadow-2xl w-5/6 text-center">
           El Juego de los Cuadrados
         </h1>
         <div className={`${!startGame ? "flex flex-col py-2 bg-white justify-center  items-center w-5/6" : "hidden"}`}>
@@ -110,7 +110,7 @@ const Clase0511 = () => {
             variant="shadow"
             onClick={handleToogleGame}
             disabled={selectedColors.length < 1}
-            className={`bg-gradient-to-tr from-blue-500 to-pink-500 text-white shadow-lg p-3 rounded-sm mx-auto`}
+            className={`bg-gradient-to-tr  from-blue-500 to-pink-500 text-white shadow-lg p-3 rounded-sm mx-auto`}
           >
             Empezár a jugar!
           </Button>
